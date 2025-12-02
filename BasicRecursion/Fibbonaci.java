@@ -1,4 +1,7 @@
-package BasicRecursion; 
+package BasicRecursion;
+
+import DSA.fibbonacci;
+
 public class Fibbonaci {
    static void simpleFibbo(int limit){
         int a=0;
@@ -12,7 +15,18 @@ public class Fibbonaci {
           i++;
         }
     }
+  static int Fibbo_rc(int a){
+    if(a<=1){
+      return 1;
+    }
+    else{
+      int m=Fibbo_rc(a-1);
+      int n=Fibbo_rc(a-2);
+      return m+n;
+    }
+  }  
 public static void main(String[] args) {
         simpleFibbo(10);
+        System.out.println(Fibbo_rc(5));
     }
 }
