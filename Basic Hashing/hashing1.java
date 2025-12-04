@@ -4,7 +4,7 @@ public class hashing1 {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the values in array from 1 to 10");
         int[]arr=new int[10];
-        int[]hash=new int[10];
+        int[]hash=new int[11               ];
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
         }
