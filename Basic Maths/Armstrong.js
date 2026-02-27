@@ -43,4 +43,3 @@ while(num > 0){
     sum=sum+(digits*digits*digits)
     num=parseInt(num/10)
 }
-console.log(sum)
